@@ -1,0 +1,6 @@
+# Directories
+.idea
+/Output
+
+# Files
+*.pdf
