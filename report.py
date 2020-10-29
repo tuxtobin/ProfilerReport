@@ -78,6 +78,9 @@ logger.info('Plotting Read & Write System Call Stacked Activity')
 mg.stack_summary(df=process_df, fields=['syscr', 'syscw'], title='Read & Write System Call Stacked Activity',
                  y='#System Calls', diff=True)
 
+logger.info('Plotting Read & Write Sizes')
+mg.line_detail(df=process_df, fields=['rsize', 'wsize'], title='Read & Write Sizes', y='Kbytes')
+
 logger.info('Plotting CPU Time (Sum)')
 mg.line_summary(df=process_df, field='cputime', title='CPU Time (Sum)', y='Time', diff=True)
 
