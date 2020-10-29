@@ -105,8 +105,10 @@ class ProcessData:
         HelperFunctions.divide_by_zero(df, 'vsize', 1024)
         HelperFunctions.divide_by_zero(df, 'rchar', 1024)
         HelperFunctions.divide_by_zero(df, 'rbytes', 1024)
+        HelperFunctions.divide_by_zero(df, 'rsize', 1024)
         HelperFunctions.divide_by_zero(df, 'wchar', 1024)
         HelperFunctions.divide_by_zero(df, 'wbytes', 1024)
+        HelperFunctions.divide_by_zero(df, 'wsize', 1024)
 
         # next bit replace the following two lines, not sure why this version of Pandas (0.22.0) doesn't like it
         # df.replace([np.inf, np.nan], 0, inplace=True)
